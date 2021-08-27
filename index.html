@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+    <head>
+        <title>Escape the ERA</title>
+        <meta charset="utf-8">
+        <script src='../js/jquery-3.5.1.js'></script>
+        <script src='../js/jquery-ui-1.10.3.custom.min.js'></script>
+        <script src='../js/jquery-1.10.2.min.js'></script>
+        <script src='../js/index.js'></script>
+        <link rel="shortcut icon" href="./ete.ico">
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                color:white;
+            }
+            .mainmenu{
+                position:relative;
+            }
+            .nav{ position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%,40%);
+            }
+            .menu>li{
+                list-style-type: none;
+                float:left;
+                font-size:25px;
+                width:200px;
+                height:60px;
+                background:white;
+                opacity:0.2;
+                text-align: center;
+                line-height: 60px;
+            }
+            .main{
+                width:100%;
+                height:1400px;
+                background-attachment: fixed;
+            }
+            .mp3{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,0%);
+                text-align: center;
+                line-height:30px;
+            }
+            audio{
+                width:300px;
+                height:40px;
+                opacity:0.3;
+            }
+            b{
+                position:absolute;
+                left:50%;
+                top:5%;
+                transform: translate(-50%,-50%);
+                font-size:40px;
+                font-family:Monotype Corsiva;
+            }
+            .song{
+                font-size:30px;
+            }
+            #mv{
+                position:absolute;
+                top:10%;
+                left:50%;
+                transform: translate(-50%,0%);
+                display:none;
+            }
+
+            #ete{
+                background-image: url('./eteblur.jpg');
+                background-size: cover;
+            }
+            #etealbum{
+                width:300px;
+                height:300px;
+                background-image: url('./ete.png');
+                background-repeat:no-repeat;
+                background-size:cover;
+                position:absolute;
+                top:40%;
+                left:50%;
+                transform: translate(-50%,-90%);
+            }
+            .mp3{
+                font-family:Monotype Corsiva;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='ete' class='main'>
+            <div id='tracklist' class='tabs-panel'>
+                <b>Escape the ERA</b>
+                <div id='etealbum' class='albumimg'></div>
+                <div class='mp3'>
+                    <p class='song'>1. INSIDE-OUTSIDE (Intro)</p><br>
+                    <audio id="audio" src="./y2mate.com - INSIDEOUTSIDE Intro.mp3" controls></audio><br><br>
+                    <p class='song'>2. YOU AND I *title</p><br>
+                    <audio id="audio" src="./y2mate.com - Dreamcatcher 드림캐쳐  YOU AND I MP3 Audio NightmareEscape the ERA.mp3" controls></audio><br><br>
+                    <p class='song'>3. Mayday</p><br>
+                    <audio id="audio" src="./y2mate.com - Mayday.mp3" controls></audio><br><br>
+                    <p class='song'>4. Which a star</p><br>
+                    <audio id="audio" src="./y2mate.com - 어느 별 Which a star.mp3" controls></audio><br><br>
+                    <p class='song'>5. Scar</p><br>
+                    <audio id="audio" src="./y2mate.com - Scar 이 더럽고도 추한.mp3" controls></audio><br><br>
+                    <p class='song'>6. YOU AND I (Inst.)</p><br>
+                    <audio id="audio" src="./y2mate.com - YOU AND I Inst.mp3" controls></audio><br><br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
